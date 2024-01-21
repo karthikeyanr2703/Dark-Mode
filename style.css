@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root{
+    --primary-color:white;
+    --seccondary-color:black;
+}
+.dark{
+    --primary-color:black;
+    --secondary-color:white;
+    
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: var(--secondary-color);
 }
 html,
 body {
@@ -18,7 +28,7 @@ body {
   display: flex;
 }
 .left{
-    background-color: white;
+    background-color: var(--primary-color);
     width: 65%;
     height: 100%;
 }
@@ -35,6 +45,7 @@ nav{
 }
 nav img{
     width: 45px;
+    cursor: pointer;
 }
 h6 img{
     width: 10px;
@@ -84,4 +95,28 @@ h6 i{
 }
 .main{
     overflow: hidden;
+}
+nav h3{
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+.rTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    font-size: larger;
+   
+    color: white;
+}
+.rTop img{
+    cursor: pointer;
+   width: 30px;
+   position: relative;
+   z-index: 21;
+   right: 30px;
+   top: 10px;
+
 }
